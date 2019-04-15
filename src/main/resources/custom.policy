@@ -1,0 +1,12 @@
+
+grant{
+    permission java.lang.RuntimePermission "getenv.*";
+    permission java.util.PropertyPermission "com.google.appengine.runtime.environment","read";
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+    permission java.util.PropertyPermission "io.grpc.internal.DnsNameResolverProvider.enable_jndi","read";
+    permission java.util.PropertyPermission "io.grpc.ManagedChannel.enableAllocationTracking","read";
+    permission java.net.NetPermission "getProxySelector";
+    permission java.io.FilePermission "${cc.fileDir}/-", "read,write,delete";
+    permission java.net.SocketPermission "127.0.0.1:1-", "connect,resolve";
+};
+

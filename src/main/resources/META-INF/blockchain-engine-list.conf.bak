@@ -1,0 +1,10 @@
+[
+    {
+        "id":"739",
+        "type":"ethereum",
+        "tls" : false,
+        "host":"127.0.0.1",
+        "port":"8052",
+        "rpcport":"8545"
+    }
+]
